@@ -1,4 +1,4 @@
-<!-- just so you know I watched a tutorial to make this but I definitely coded it all out! -->
+<!-- just so you know I watched a tutorial to make this but I definitely coded it all out even though I followed a video tutorial! -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,9 +25,14 @@
          min-height: 55px;
          padding: 0 15px 5px;
      }
-     .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+     .navbar-inverse .navbar-nav .active a, 
+     .navbar-inverse .navbar-nav .active a:focus, 
+     .navbar-inverse .navbar-nav .active a:hover {
          color:#fff;
          background-color:#5E4485;
+     }
+     .navbar-inverse .navbar-nav li a {
+         color: #d5d5d5;
      }
 
   </style>
@@ -56,5 +61,29 @@
         </div>
     </nav>
 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/mountains.png">
+                <div class="carousel-caption">
+                    <h1>get to know bootstrap</h1>
+                    <br/>
+                    <button type="button" class="btn btn-default">Get Started</button>
+                </div>
+            </div> <!-- End Active -->
+            <div  class="item">
+                    <img src="img/snow.png">
+                </div>
+        </div>
+        
+
+
+    </div> 
+    <!-- This is the end of our slider -->
 </body>
 </html>
